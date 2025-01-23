@@ -64,7 +64,7 @@ import "@chatscope/chat-ui-kit-styles/dist/default/styles.min.css";
 const App: React.FC = () => {
   
   const [messages, setMessages] = useState([
-    { content: "Hello! How can I help you?", sender: "AI" },
+    { content: `Hello! How can I help you? ${process.env.REACT_APP_baseURL}`, sender: "AI" },
   ]);
 
   const handleSend = async(content: string) => {
