@@ -10,6 +10,9 @@ COPY package*.json ./
 # Install dependencies
 RUN npm install
 
+## install cross-env
+RUN npm install cross-env --save-dev
+
 # Copy the rest of the application code to the container
 COPY . .
 
