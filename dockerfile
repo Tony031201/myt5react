@@ -1,5 +1,5 @@
 # Use an official Node.js runtime as a parent image
-FROM node:16 AS build
+FROM nginx:1.21-alpine
 
 # Set the working directory in the container
 WORKDIR /app
